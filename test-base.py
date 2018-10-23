@@ -7,7 +7,7 @@ id=0
 def input_record():
     name=input("请输入姓名：")
     phone_number=input('请输入电话号码：')
-    record={'name'=name,'phone_number'=phone_number}
+    record={'name':name,'phone_number':phone_number}
 
     return record
 
@@ -100,13 +100,13 @@ def change_record(name):
 
                     if s=='3':
                         name=input('请输入姓名：')
-                        delete_recode(name)
+                        delete_record(name)
 
                     if s=='4':
                         name=input('请输入姓名')
                         change_record(name)
 
-                    if s=='5'
+                    if s=='5':
                         break
 
                 else:
