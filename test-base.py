@@ -7,11 +7,18 @@ id=0
 def input_record():
     name=input("请输入姓名：")
     phone_number=input('请输入电话号码：')
+<<<<<<< HEAD
     record={'name':name,'phone_number':phone_number}
 
     return record
 
 #添加
+=======
+    record={'name'=name,'phone_number'=phone_number}
+
+    return record
+
+>>>>>>> remotes/orj/master
 def add_record():
     record=input_record()
     global id
@@ -20,12 +27,16 @@ def add_record():
     record_list.append(record)
     return '添加成功'
 
+<<<<<<< HEAD
 #查询
+=======
+>>>>>>> remotes/orj/master
 def query_record(name):
     query_result=[]
     query_ids=[]
     for record in record_list:
         if record['name']==name:
+<<<<<<< HEAD
             query_ids.append(record["id"])
             query_result.append(record)
     return query_ids,query_result
@@ -112,6 +123,17 @@ def change_record(name):
                 else:
                     print('输入有误！')
                     continue
+=======
+            query_ids.append(record["record_id"])
+            query_result.append(record)
+    return query_ids,query_result
+
+def delete_record(name):
+    query_ids,query_result=query_record(name)
+
+def delete_record(name):
+    query_ids,query_result= query_record(name)
+>>>>>>> remotes/orj/master
 
 
 
@@ -119,3 +141,20 @@ def change_record(name):
 
 
 
+<<<<<<< HEAD
+=======
+
+    def query_record():
+
+        listtable = [{'姓名'：'张三'，'电话': '12465', 'id': '1'}]
+
+
+
+
+        def change_record():
+
+
+    def delete_record():
+
+
+>>>>>>> remotes/orj/master
