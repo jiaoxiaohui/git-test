@@ -82,31 +82,31 @@ def change_record(name):
             query_result[0]['phone_number']=phone_number
             print('修改成功')
 
-    if __name__=='__main__':
-        while True:
-            menu="""通讯录：1.添加，2.查找，3.删除，4.修改，5.退出"""
-            print(menu)
-            s=input('请选择操作：')
-            if s in ['1','2','3','4','5']:
+if __name__=='__main__':
+    while True:
+        menu="""通讯录：1.添加，2.查找，3.删除，4.修改，5.退出"""
+        print(menu)
+        s=input('请选择操作：')
+        if s in ['1','2','3','4','5']:
             if s=='1':
-                    msg=add_record()
-                    print(msg)
-                if s=='2':
-                    name=input('请输入姓名：')
-                    query_ids,query_result=query_record(name)
-                    if len(query_ids)==0:
-                        print('不存在')
+                msg=add_record()
+                print(msg)
+            if s=='2':
+                name=input('请输入姓名：')
+                query_ids,query_result=query_record(name)
+                if len(query_ids)==0:
+                    print('不存在')
 
-                if s=='3':
-                    name=input('请输入姓名：')
-                    delete_record(name)
+            if s=='3':
+                name=input('请输入姓名：')
+                delete_record(name)
 
-                if s=='4':
-                    name=input('请输入姓名')
-                    change_record(name)
-                if s=='5':
-                    break
+            if s=='4':
+                name=input('请输入姓名')
+                change_record(name)
+            if s=='5':
+                break
 
-            else:
-                print('输入有误！')
-                continue
+        else:
+            print('输入有误！')
+            continue
