@@ -87,7 +87,7 @@ if __name__=='__main__':
             print('查询结果：')
             print(query_record())
         elif choose=='3':
-            print('查询结果：')
+            print('删除后的结果：')
             print(delete_record())
         elif choose=='4':
             print(change_record())
