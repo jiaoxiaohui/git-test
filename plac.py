@@ -84,9 +84,10 @@ if __name__=='__main__':
         if choose=='1':
             print(add_record())
         elif choose=='2':
-            print(query_record())
             print('查询结果：')
-        elif choose=='3':print('查询结果：')
+            print(query_record())
+        elif choose=='3':
+            print('查询结果：')
             print(delete_record())
         elif choose=='4':
             print(change_record())
